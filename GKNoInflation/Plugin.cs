@@ -1,4 +1,5 @@
-﻿using BepInEx;
+﻿using System;
+using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 
@@ -11,15 +12,14 @@ namespace GKNoInflation
 
         private void Awake()
         {
-            // Plugin startup logic
             Logger = base.Logger;
-            Harmony.CreateAndPatchAll(typeof(TradingPatches));
+            Harmony.CreateAndPatchAll(typeof(Plugin).Assembly, MyPluginInfo.PLUGIN_GUID);
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
     }
 
-    [HarmonyPatch(typeof(Trading), nameof(Trading.GetSingleItemCostInTraderInventory))]
-    [HarmonyPatch(typeof(Trading), nameof(Trading.GetSingleItemCostInPlayerInventory))]
+    [HarmonyPatch(typeof(Trading), nameof(Trading.GetSingleItemCostInTraderInventory), new Type[] { typeof(Item), typeof(int) })]
+    [HarmonyPatch(typeof(Trading), nameof(Trading.GetSingleItemCostInPlayerInventory), new Type[] { typeof(Item), typeof(int) })]
     static class TradingPatches
     {
         static void Postfix(ref float __result, Item item)
