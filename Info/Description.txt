@@ -1,0 +1,21 @@
+[font=Verdana][size=4][b]Description[/b][/size][/font]
+This mod removes Graveyard Keeper's dynamic pricing, which normally scales buy and sell prices based on how many of an item are already in the trader's stock or how many you're offering. With the inflation disabled, all items stay at their base price whether you're buying or selling.
+
+Using BepInEx's Configuration Manager (default hotkey [b]F1[/b]), you can independently toggle the price-fixing for buying from the trader and for selling from your inventory.
+
+The mod is a combination of both [url=https://www.nexusmods.com/graveyardkeeper/mods/11]Anti-Inflation Mod[/url] and [url=https://www.nexusmods.com/graveyardkeeper/mods/17]Anti-Inflation Mod Reverse[/url] mods, but made for BepInEx.
+
+[font=Verdana][size=4][b]Requirements[/b][/size][/font]
+[size=3][url=https://www.nexusmods.com/graveyardkeeper/mods/79]Graveyard Keeper BepInEx 5 Pack[/url][/size]
+
+[font=Verdana][size=3][b]Credits[/b][/size][/font]
+[list]
+[*][url=https://www.nexusmods.com/graveyardkeeper/mods/11]Anti-Inflation Mod[/url][/*]
+[*][url=https://www.nexusmods.com/graveyardkeeper/mods/17]Anti-Inflation Mod Reverse - Remove Sell Deflation[/url][/*]
+[/list]
+
+[b][url=https://github.com/igromanru/GKNoInflation]GitHub Page[/url][/b]
+
+[font=Arial][size=4]Highest form of appreciation[/size][/font]
+[size=2]If you like my work and feel generous, you can support me.[/size]
+[url=https://ko-fi.com/igromanru][img]https://i.imgur.com/rGcPxK8.png[/img][/url]
